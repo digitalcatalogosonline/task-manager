@@ -5,7 +5,7 @@ import Cards from "../components/cards/card";
 
 export default async function Hola() {
   
-  const req = await fetch("http://localhost:3000/api/addTask",{ cache: 'no-store' });
+  const req = await fetch("https://task-manager-livid-seven.vercel.app/api/addTask",{ cache: 'no-store' });
   const data = await req.json();
   return (
     <>
